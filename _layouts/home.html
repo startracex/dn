@@ -12,7 +12,6 @@
     <div class="dn_title">
       {{ site.title }}
     </div>
-    {{ content }}
     <ul class="dn_link_list">
       {% for note in site.notes %}
       <li class="dn_link_list_item">
@@ -22,6 +21,7 @@
       </li>
       {% endfor %}
     </ul>
+    {{ content }}
   </div>
 </body>
 
