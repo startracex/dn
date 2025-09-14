@@ -16,7 +16,7 @@
     <ul class="dn_link_list">
       {% for note in site.notes %}
       <li class="dn_link_list_item">
-        <a href="{{ note.url }}">
+        <a href="{{ note.url  | relative_url}}">
           {{ note.title }}
         </a>
       </li>
