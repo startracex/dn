@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+
+<body>
+  <div class="dn_container">
+    <div class="dn_bard_font dn_title">
+      {{ site.title | upcase }}
+    </div>
+    <h1 class="dn_bard_font" style="margin: 0;">
+      {{ page.title }}
+    </h1>
+    <main class="dn_content_font dn_content">
+      {{ content }}
+    </main>
+  </div>
+
+</body>
+
+</html>

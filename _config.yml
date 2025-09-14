@@ -1,0 +1,5 @@
+title: Death Note
+collections:
+  notes:
+    output: true  
+    permalink: /notes/:name

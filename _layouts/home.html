@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+
+<body>
+  <div class="dn_container dn_conver_font">
+    <div class="dn_title">
+      {{ site.title }}
+    </div>
+    {{ content }}
+    <ul class="dn_link_list">
+      {% for note in site.notes %}
+      <li class="dn_link_list_item">
+        <a href="{{ note.url }}">
+          {{ note.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  </div>
+</body>
+
+</html>

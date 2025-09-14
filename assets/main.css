@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Death Note";
+  src: url("./Death Note.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "05_ZZ_Death_Note";
+  src: url("./05_ZZ_Death_Note_1_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Death Note Bard";
+  src: url("./DEATHNOTE Font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 30px;
+  color-scheme: dark;
+  color: aliceblue;
+  background-color: black;
+  height: 100%;
+}
+
+::selection {
+  color: black;
+  background-color: aliceblue;
+}
+
+body {
+  display: contents;
+}
+
+.dn_container {
+  padding: 3em;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+
+li {
+  list-style-type: none
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block-start: 1em;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+code {
+  overflow-wrap: anywhere;
+}
+
+.dn_title {
+  text-align: center;
+  font-size: 4em;
+}
+
+.dn_conver_font {
+  font-family: "Death Note";
+}
+
+.dn_content_font {
+  font-family: "05_ZZ_Death_Note";
+}
+
+.dn_bard_font {
+  font-family: "Death Note Bard";
+}
+
+.dn_link_list {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dn_link_list_item {
+  text-align: center;
+  margin: .25em;
+  list-style: none;
+}
+
+.dn_content *:first-child {
+  margin-block-start: 0;
+}
+
+pre code {
+  width: 100%;
+  display: block;
+  padding: .5em;
+}
+
+code {
+  font-size: .7em;
+  font-family: ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace;
+  background: #0a0a0a;
+  padding: .25em;
+  border-radius: .25em;
+}
