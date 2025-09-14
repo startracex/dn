@@ -55,11 +55,9 @@ a {
   text-decoration: none;
 }
 
-
 li {
-  list-style-type: none
+  list-style-type: none;
 }
-
 
 h1,
 h2,
@@ -109,7 +107,7 @@ code {
 
 .dn_link_list_item {
   text-align: center;
-  margin: .25em;
+  margin: 0.25em;
   list-style: none;
 }
 
@@ -120,19 +118,18 @@ code {
 pre code {
   width: 100%;
   display: block;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 code {
-  font-size: .7em;
-  font-family: ui-monospace,
-    SFMono-Regular,
-    SF Mono,
-    Menlo,
-    Consolas,
-    Liberation Mono,
-    monospace;
+  font-size: 0.7em;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   background: #0a0a0a;
-  padding: .25em;
-  border-radius: .25em;
+  overflow-x: scroll;
+  padding: 0.25em;
+  border-radius: 0.25em;
+}
+
+main {
+  width: 100%;
 }
